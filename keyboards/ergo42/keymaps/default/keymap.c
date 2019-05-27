@@ -17,14 +17,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
    * | SYMB | LSft |   Z  |   X  |   C  |   V  |  B   |   |  N   |   M  |   ,  |   .  |   /  | RSft |  =   |
    * |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
-   * | META | LGUI |   '  |  (   | LAlt | Space| BSpc |   |Enter | RGUI |  \   | LEFT | UP   | DOWN | RIGHT|
+   * | META | LGUI |   '  |  (   | LAlt | BSpc | Space|   |Enter | RGUI |  \   | LEFT | UP   | DOWN | RIGHT|
    * `------------------------------------------------'   `------------------------------------------------'
    */
   [BASE] = LAYOUT( \
     KC_DELT,  KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_GRV, \
     KC_TAB,   KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,   KC_J,    KC_K,    KC_L,    KC_SCLN, KC_RBRC, KC_MINS, \
     MO(SYMB), KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,   KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, KC_EQL, \
-    MO(META), KC_LGUI, KC_QUOT, S(KC_9), KC_LALT, KC_SPC,  KC_BSPC, KC_ENT, KC_RGUI, KC_BSLS, KC_LEFT, KC_UP,  KC_DOWN, KC_RGHT \
+    MO(META), KC_LGUI, KC_QUOT, S(KC_9), KC_LALT, KC_BSPC, KC_SPC, KC_ENT, KC_RGUI, KC_BSLS, KC_LEFT, KC_UP,  KC_DOWN, KC_RGHT \
   ),
 
   /* META
@@ -64,4 +64,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   )
 
 };
-
