@@ -53,14 +53,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
    * | SYMB |      |      |      |      |      |  {   |   |  }   |      |      |      |      |      | =    |
    * |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
-   * | META | LGUI |   '  |      | LAlt | Space| BSpc |   |Enter | RGUI |   \  | LEFT | UP   | DOWN | RIGHT|
+   * | META | LGUI |   '  |   \  | LAlt | Space| BSpc |   |Enter | RGUI | RAlt | LEFT | UP   | DOWN | RIGHT|
    * `------------------------------------------------'   `------------------------------------------------'
    */
   [SYMB] = LAYOUT( \
     KC_ESC,  S(KC_1), S(KC_2), S(KC_3), S(KC_4), S(KC_5), KC_LBRC,    KC_RBRC,    S(KC_6), S(KC_7), S(KC_8), S(KC_9), S(KC_0), _______, \
     KC_DEL,  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, S(KC_9),    S(KC_0),    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, S(KC_LBRC), S(KC_RBRC), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, _______, \
-    _______, _______, _______, XXXXXXX, _______, _______, _______,    _______,    _______, _______, _______, _______, _______, _______ \
+    _______, _______, _______, _______, _______, _______, _______,    _______,    _______, _______, _______, _______, _______, _______ \
   )
 
 };
